@@ -73,7 +73,7 @@
 
             <div class="col-sm-12">
                 <div class="row">
-                    <!-- Pie Chart 2 -->
+                    <!-- Row Chart -->
                     <div class="col-sm-4">
                         <div class="chart-wrapper" data-step="3" data-intro="The description that you want" data-position="right">
                             <div class="chart-title">
@@ -84,8 +84,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Pie Chart 2 -->
                     <!-- Row Chart -->
+                    <!-- Pie Chart 2 -->
                     <div class="col-sm-4">
                         <div class="chart-wrapper" data-step="4" data-intro="The description that you want" data-position="right">
                             <div class="chart-title">
@@ -96,36 +96,39 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Row Chart -->
-                    <!-- Menu Select -->
+                    <!-- Pie Chart 2 -->
+                    <!-- Container for the final two boxes -->
                     <div class="col-sm-2">
-                        <div class="chart-wrapper" data-step="5" data-intro="The description that you want" data-position="bottom">
-                            <div class="chart-title">
-                                Tournament filter
+                        <div class="row"><!-- To display the final two boxes stacked rather than alongside each other -->
+                            <!-- Menu Select -->
+                            <div class="col-sm-12"><!-- Added to retain the same horizontal margins relative to other charts -->
+                                <div class="chart-wrapper" data-step="5" data-intro="The description that you want" data-position="bottom">
+                                    <div class="chart-title">
+                                        Tournament filter
+                                    </div>
+                                    <div class="chart-stage">
+                                        <div id="year-selector"></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="chart-stage">
-                                <div id="year-selector"></div>
+                            <!-- Menu Select -->
+                        </div>
+                        <div class="row"><!-- To display the final two boxes stacked rather than alongside each other -->
+                            <!-- Goals Display -->
+                            <div class="col-sm-12"><!-- Added to retain the same horizontal margins relative to other charts -->
+                                <div class="chart-wrapper" data-step="6" data-intro="The description that you want" data-position="right">
+                                    <div class="chart-title">
+                                        Total number of goals
+                                    </div>
+                                    <div class="chart-stage">
+                                        <div id="total-goals"></div>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- Goals Display -->
                         </div>
                     </div>
-                    <!-- Menu Select -->
-                </div>
-            </div>
-
-            <div class="col-sm-12">
-                <div class="row">
-                    <!-- Goals Display -->
-                    <div class="col-sm-2">
-                        <div class="chart-wrapper" data-step="6" data-intro="The description that you want" data-position="right">
-                            <div class="chart-title">
-                                Total number of goals
-                            </div>
-                            <div id="xyz" class="chart-stage">
-                                <div id="total-goals"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Goals Display -->
+                    <!-- Container for the final two boxes -->
                 </div>
             </div>
 
