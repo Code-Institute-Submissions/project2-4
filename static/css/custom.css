@@ -23,6 +23,7 @@ body.application {
 /*text colour for all of the links on the collapsible nav menu*/
 .navbar-inverse .navbar-nav > li > a {
     color: #ffbbbf;
+    overflow: scroll;
 }
 /*text and background colour for the nav link of active/current page*/
 .navbar-inverse .navbar-nav > .active > a,
@@ -49,10 +50,10 @@ body.application {
 .intro-button {
     margin-top: 12px;
 }
-.intro-button:hover {
+.intro-button:hover,
+.intro-button:active {
     margin-top: 12px;
-
-    border: 2px solid #555555;
+    border: 2px solid #951c23;
     border-radius: 4px;
     background-image: linear-gradient(0deg, #ffd4dc 55%, #ffedec 55%);
 }
