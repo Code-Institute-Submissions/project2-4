@@ -4,8 +4,8 @@ queue()
 
 function multiGraphs(error, wcStats) {
     makeGraphs(error, wcStats);
-    makePie(error, wcStats);
     makeRow(error, wcStats);
+    makePie(error, wcStats);
 }
 
 function makeGraphs(error, wcStats) {
@@ -51,7 +51,7 @@ function makeGraphs(error, wcStats) {
         .yAxis().ticks(4);
 
     pieChart
-        .ordinalColors(["#79CED7", "#66AFB2", "#C96A23", "#D3D1C5", "#F5821F"])
+        .ordinalColors(["#89bede", "#b1d5e7", "#ffb57f", "#fdd9b5", "#6ad48b", "#7aef9e"])
         .height(350)
         .radius(140)
         .innerRadius(40)
@@ -107,7 +107,6 @@ function makeRow(error, wcStats){
     var winnersRowChart = dc.rowChart('#winners-row-chart');
 
     winnersRowChart
-        //.ordinalColors(["#79CED7", "#66AFB2", "#C96A23", "#D3D1C5", "#F5821F"])
         .width(550)
         .height(350)
         .margins({top: 30, right: 50, bottom: 60, left: 50})
@@ -144,10 +143,9 @@ function makePie(error, wcStats) {
     var placeDim = ndx.dimension(dc.pluck('Place')).filter('2');
 
     var runnersupChart = dc.pieChart('#runners-up-chart');
-    //var winnersChart1 = dc.pieChart('#winners-chart'), winnersChart2 = dc.pieChart('#winners-chart');
 
     runnersupChart
-        //.ordinalColors(["#79CED7", "#66AFB2", "#C96A23", "#D3D1C5", "#F5821F"])
+        .ordinalColors(["#89bede", "#b1d5e7", "#ffb57f", "#6ad48b"])
         .height(350)
         .radius(140)
         .innerRadius(40)
@@ -170,8 +168,6 @@ function styleNumberDisplay() {
         'width': '100%'
     };
 
-    //$('.chart-stage, #total-goals').css(styles);
-    //$('.chart-stage').css(styles);
     $('#total-goals').css(styles);
 }
 

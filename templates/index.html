@@ -28,7 +28,7 @@
                     <!-- Intro Text -->
                     <div class="col-xs-12">
                         <div class="intro-section">
-                            Welcome to my FIFA World Cup Finals statistics hub! With the 21st football World Cup taking place this summer I thought it would be a good idea to create an overview of the most interesting stats spanning the entire history of this iconic competition. Click the image below to see all the relevant charts and data.
+                            Welcome to my FIFA World Cup Finals statistics hub! With the 21st football World Cup taking place this summer I thought it would be a good idea to create an overview of the most interesting stats spanning the entire history of this iconic competition. The top two charts below will interact with each other when you click on a particular segment of either one. The Tournament filter will allow you to see total goals scored for a particular year. Give it a try!
                         </div>
                     </div>
                     <!-- Intro Text -->
@@ -43,7 +43,7 @@
                             <div class="chart-title">
                                 Goals in all World Cup Finals
                             </div>
-                            <div class="chart-stage">
+                            <div class="chart-stage scrolling">
                                 <div id="time-chart"></div>
                             </div>
                         </div>
@@ -55,7 +55,7 @@
                             <div class="chart-title">
                                 Total World Cup Finals goals by country (for the year selected)
                             </div>
-                            <div class="chart-stage">
+                            <div class="chart-stage scrolling">
                                 <div id="pie-chart"></div>
                             </div>
                         </div>
@@ -68,11 +68,11 @@
                 <div class="row">
                     <!-- Row Chart -->
                     <div class="col-xs-12 col-md-4">
-                        <div class="chart-wrapper" data-step="3" data-intro="The description that you want" data-position="right">
+                        <div class="chart-wrapper" data-step="3" data-intro="Shows all the countries that have won the World Cup at least once." data-position="right">
                             <div class="chart-title">
                                 All tournament winners
                             </div>
-                            <div class="chart-stage">
+                            <div class="chart-stage scrolling">
                                 <div id="winners-row-chart"></div>
                             </div>
                         </div>
@@ -80,11 +80,11 @@
                     <!-- Row Chart -->
                     <!-- Pie Chart 2 -->
                     <div class="col-xs-12 col-md-4">
-                        <div class="chart-wrapper" data-step="4" data-intro="The description that you want" data-position="right">
+                        <div class="chart-wrapper" data-step="4" data-intro="Shows all the countries that have finished the tournament as a runner-up at least once." data-position="right">
                             <div class="chart-title">
                                 All tournament runners-up
                             </div>
-                            <div class="chart-stage">
+                            <div class="chart-stage scrolling">
                                 <div id="runners-up-chart"></div>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                         <div class="row"><!-- To display the final two boxes stacked rather than alongside each other -->
                             <!-- Menu Select -->
                             <div class="col-xs-12"><!-- Added to retain the same horizontal margins relative to other charts -->
-                                <div class="chart-wrapper" data-step="5" data-intro="The description that you want" data-position="bottom">
+                                <div class="chart-wrapper no-scroll" data-step="5" data-intro="Use the drop-down to view the World Cup Finals goals in the pie chart for the year selected. The number next to each year is the number of teams participating in that tournament." data-position="right">
                                     <div class="chart-title">
                                         Tournament filter
                                     </div>
@@ -109,9 +109,9 @@
                         <div class="row"><!-- To display the final two boxes stacked rather than alongside each other -->
                             <!-- Goals Display -->
                             <div class="col-xs-12"><!-- Added to retain the same horizontal margins relative to other charts -->
-                                <div class="chart-wrapper" data-step="6" data-intro="The description that you want" data-position="right">
+                                <div class="chart-wrapper no-scroll" data-step="6" data-intro="This shows the number of goals according to user selection, whether by particular year, scored by a particular country or both. By default this shows total goals scored in the history of the competition." data-position="right">
                                     <div class="chart-title">
-                                        Total number of goals
+                                        Total goals scored
                                     </div>
                                     <div class="chart-stage">
                                         <div id="total-goals"></div>

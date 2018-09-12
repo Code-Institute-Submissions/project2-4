@@ -74,6 +74,11 @@ body.application {
     font-weight: bold;
 }
 
+/*Enable scrolling on the divs containing the charts ('chart-stage') when the page is viewed on smaller screens*/
+.chart-wrapper .scrolling {
+    overflow-x: auto;
+}
+
 /*Modify the drop-down box (aka dc.selectMenu function) to include green background*/
 .dc-select-menu {
     background: #33CC99;
