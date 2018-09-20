@@ -15,7 +15,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="">FIFA World Cup Finals Dashboard</a>
+                <a class="navbar-brand brand" href="">FIFA World Cup Finals Dashboard</a>
                 <button class="intro-button" type="submit" autofocus onclick="javascript:introJs().start();">Start Tour!</button>
             </div>
         </div>
@@ -95,7 +95,7 @@
                         <div class="row"><!-- To display the final two boxes stacked rather than alongside each other -->
                             <!-- Menu Select -->
                             <div class="col-xs-12"><!-- Added to retain the same horizontal margins relative to other charts -->
-                                <div class="chart-wrapper no-scroll" data-step="5" data-intro="Use the drop-down to view the World Cup Finals goals in the pie chart for the year selected. The number next to each year is the number of teams participating in that tournament." data-position="right">
+                                <div class="chart-wrapper" data-step="5" data-intro="Use the drop-down to view the World Cup Finals goals in the pie chart for the year selected. The number next to each year is the number of teams participating in that tournament." data-position="right">
                                     <div class="chart-title">
                                         Tournament filter
                                     </div>
@@ -109,14 +109,14 @@
                         <div class="row"><!-- To display the final two boxes stacked rather than alongside each other -->
                             <!-- Goals Display -->
                             <div class="col-xs-12"><!-- Added to retain the same horizontal margins relative to other charts -->
-                                <div class="chart-wrapper no-scroll" data-step="6" data-intro="This shows the number of goals according to user selection, whether by particular year, scored by a particular country or both. By default this shows total goals scored in the history of the competition." data-position="right">
+                                <div class="chart-wrapper" data-step="6" data-intro="This shows the number of goals according to user selection, whether by particular year, scored by a particular country or both. By default this shows total goals scored in the history of the competition." data-position="right">
                                     <div class="chart-title">
                                         Total goals scored
                                     </div>
                                     <div class="chart-stage">
                                         <div id="total-goals"></div>
                                     </div>
-                                </div>
+                                </div><a href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
                             </div>
                             <!-- Goals Display -->
                         </div>

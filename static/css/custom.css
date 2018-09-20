@@ -46,6 +46,13 @@ body.application {
     padding-right: 15px;
 }
 
+/*Force the navbar heading to crop on smaller screens*/
+@media (max-width: 460px) {
+    .brand {
+        max-width: 100vw;
+    }
+}
+
 /*Add a custom style to the 'Start Tour' button */
 .intro-button {
     margin-top: 12px;
@@ -77,6 +84,12 @@ body.application {
 /*Enable scrolling on the divs containing the charts ('chart-stage') when the page is viewed on smaller screens*/
 .chart-wrapper .scrolling {
     overflow-x: auto;
+}
+
+/*Disable the click functionality on the winners and runners-up charts*/
+#winners-row-chart,
+#runners-up-chart {
+    pointer-events: none;
 }
 
 /*Modify the drop-down box (aka dc.selectMenu function) to include green background*/
