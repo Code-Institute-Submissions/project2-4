@@ -46,18 +46,24 @@ body.application {
     padding-right: 15px;
 }
 
-/*Force the navbar heading font size to reduce on smaller screens
-@media (max-width: 460px) {
+/*Force the navbar heading font size to reduce on smaller screens*/
+@media (min-width: 321px) and (max-width: 760px) {
+    .brand {
+        font-size: 1.5rem;
+    }
+}
+/*Takes care of the smallest size screen*/
+@media (max-width: 320px) {
     .brand {
         font-size: 1.3rem;
     }
-}*/
-@media (max-width: 460px) {
+}
+/*@media (max-width: 460px) {
     .brand {
         max-width: 40vw;
         overflow: hidden;
     }
-}
+}*/
 
 /*Add a custom style to the 'Start Tour' button */
 .intro-button {
