@@ -10,7 +10,7 @@ body.application {
     background-size: cover;
 }
 
-/*Amend some keen-dashboards Navbar values*/
+/*Amend some keen-dashboards navbar values*/
 .navbar-inverse {
     background-color: #951c23;
     border-color: #951c23;
@@ -47,7 +47,7 @@ body.application {
 }
 
 /*Force the navbar heading font size to reduce on smaller screens*/
-@media (min-width: 321px) and (max-width: 760px) {
+@media (min-width: 321px) and (max-width: 460px) {
     .brand {
         font-size: 1.5rem;
     }
@@ -58,12 +58,6 @@ body.application {
         font-size: 1.3rem;
     }
 }
-/*@media (max-width: 460px) {
-    .brand {
-        max-width: 40vw;
-        overflow: hidden;
-    }
-}*/
 
 /*Add a custom style to the 'Start Tour' button */
 .intro-button {
