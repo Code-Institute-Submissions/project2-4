@@ -41,6 +41,19 @@ You can see the live website [here](https://world-cup-stats.herokuapp.com/).
 
 ## Testing
 
+### Responsive testing
+
+#### Browsers checked
+```
+Mozilla Firefox
+Google Chrome
+Internet Explorer
+Safari
+```
+The website looks and works fine at full screen size on all of the above mentioned browsers. I used the developer tools in Google Chrome to check how the site looks on smaller screen devices and it passes that test also but for one small exception.
+
+The "Start Tour" button seems to be pushed down onto a line below the 'FIFA' heading in the navbar when viewed on an actual iPad. Now on the simulated version of the latest iPad in the developer tools the website looks absolutely fine, so I can only assume it's a problem possibly on some of the older iPads because the iPad I used was a very old model. Thus far I have not been able to fix that particular issue.
+
 ### Possible console errors
 
 It is possible that if a user has a pop-up blocker or adblocker enabled on any of their browsers that the console will display a couple of errors trying to load some JavaScript files. To get rid of the errors the user will have to turn off the blocker.
