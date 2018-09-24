@@ -73,7 +73,7 @@ body.application {
 
 .intro-section {
     background: rgba(255,255,255,0.4);      /*rgba used to turn only the background colour transparent*/
-    color: #333;
+    color: #222;
     font-size: 18px;
     font-weight: 200;
     text-align: center;
